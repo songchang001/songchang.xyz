@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="宋畅的技术博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="CentOS Minimal版本,CentOS安装,CentOS server配置" />
+
+
+<meta name="description" content="下载 CentOS Minimal版本 安装包镜像地址：阿里云镜像：https://mirrors.aliyun.com/centos/
+网易镜像：http://mirrors.163.com/..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    Linux系列文章16 - 安装和配置CentOS服务器 |
+    
+    宋畅的技术博客
+</title>
+
+<link rel="alternate" href="/atom.xml" title="宋畅的技术博客" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='宋畅'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        宋畅的技术博客</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后台</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/服务器/"><i class="fa "></i>
+                                服务器</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/其他/"><i class="fa "></i>
+                                其他</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Linux系列文章16 - 安装和配置CentOS服务器">
+            
+                    Linux系列文章16 - 安装和配置CentOS服务器
+                        
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a> <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/">Linux</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/CentOS-Minimal%E7%89%88%E6%9C%AC/" rel="tag">CentOS Minimal版本</a> <a class="tag-link" href="/tags/CentOS-server%E9%85%8D%E7%BD%AE/" rel="tag">CentOS server配置</a> <a class="tag-link" href="/tags/CentOS%E5%AE%89%E8%A3%85/" rel="tag">CentOS安装</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2021/02/10</span>
+    </span>
+    
+    
+</div>
+            
+                
+    </div>
+    
+        <div class="post-body post-content">
+            <h1 id="下载-CentOS-Minimal版本-安装包"><a href="#下载-CentOS-Minimal版本-安装包" class="headerlink" title="下载 CentOS Minimal版本 安装包"></a>下载 CentOS Minimal版本 安装包</h1><h2 id="镜像地址："><a href="#镜像地址：" class="headerlink" title="镜像地址："></a>镜像地址：</h2><p>阿里云镜像：<a href="https://mirrors.aliyun.com/centos/" target="_blank" rel="noopener">https://mirrors.aliyun.com/centos/</a></p>
+<p>网易镜像：<a href="http://mirrors.163.com/" target="_blank" rel="noopener">http://mirrors.163.com/</a></p>
+<h2 id="找到CentOS-Minimal版本："><a href="#找到CentOS-Minimal版本：" class="headerlink" title="找到CentOS Minimal版本："></a>找到CentOS Minimal版本：</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305003610213.png" alt="image-20210305003610213"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305003638660.png" alt="image-20210305003638660"></p>
+<p>找ios镜像</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305003715032.png" alt="image-20210305003715032"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305003732090.png" alt="image-20210305003732090"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305003814360.png" alt="image-20210305003814360"></p>
+<h1 id="VirtualBox新建虚拟机"><a href="#VirtualBox新建虚拟机" class="headerlink" title="VirtualBox新建虚拟机"></a>VirtualBox新建虚拟机</h1><h2 id="命名、设置虚拟机位置"><a href="#命名、设置虚拟机位置" class="headerlink" title="命名、设置虚拟机位置"></a>命名、设置虚拟机位置</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305004958909.png" alt="image-20210305004958909"></p>
+<h2 id="设置内存大小"><a href="#设置内存大小" class="headerlink" title="设置内存大小"></a>设置内存大小</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005049609.png" alt="image-20210305005049609"></p>
+<h2 id="设置硬盘并创建"><a href="#设置硬盘并创建" class="headerlink" title="设置硬盘并创建"></a>设置硬盘并创建</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005139707.png" alt="image-20210305005139707"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005225975.png" alt="image-20210305005225975"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005247831.png" alt="image-20210305005247831"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005352344.png" alt="image-20210305005352344"></p>
+<h2 id="创建成功，设置盘片"><a href="#创建成功，设置盘片" class="headerlink" title="创建成功，设置盘片"></a>创建成功，设置盘片</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005724933.png" alt="image-20210305005724933"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005753178.png" alt="image-20210305005753178"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005830302.png" alt="image-20210305005830302"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005900399.png" alt="image-20210305005900399"></p>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305005936689.png" alt="image-20210305005936689"></p>
+<h1 id="安装-CentOS-Minimal版本-系统"><a href="#安装-CentOS-Minimal版本-系统" class="headerlink" title="安装 CentOS Minimal版本 系统"></a>安装 CentOS Minimal版本 系统</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010039786.png" alt="image-20210305010039786"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010106879.png" alt="image-20210305010106879"></p>
+<h2 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010215278.png" alt="image-20210305010215278"></p>
+<h2 id="设置分区"><a href="#设置分区" class="headerlink" title="设置分区"></a>设置分区</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010311670.png" alt="image-20210305010311670"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010332504.png" alt="image-20210305010332504"></p>
+<h2 id="设置网络"><a href="#设置网络" class="headerlink" title="设置网络"></a>设置网络</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010401745.png" alt="image-20210305010401745"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010457750.png" alt="image-20210305010457750"></p>
+<h3 id="设置网络自动连接"><a href="#设置网络自动连接" class="headerlink" title="设置网络自动连接"></a>设置网络自动连接</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010528644.png" alt="image-20210305010528644"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010558702.png" alt="image-20210305010558702"></p>
+<p>设置时区</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010630128.png" alt="image-20210305010630128"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010731308.png" alt="image-20210305010731308"></p>
+<h2 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010752909.png" alt="image-20210305010752909"></p>
+<h3 id="安装过程中设置root密码"><a href="#安装过程中设置root密码" class="headerlink" title="安装过程中设置root密码"></a>安装过程中设置root密码</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010828985.png" alt="image-20210305010828985"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305010901910.png" alt="image-20210305010901910"></p>
+<h2 id="安装完成-重启系统"><a href="#安装完成-重启系统" class="headerlink" title="安装完成 重启系统"></a>安装完成 重启系统</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305011256668.png" alt="image-20210305011256668"></p>
+<h2 id="使用root用户登录系统"><a href="#使用root用户登录系统" class="headerlink" title="使用root用户登录系统"></a>使用root用户登录系统</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305011416725.png" alt="image-20210305011416725"></p>
+<h1 id="配置centos服务器"><a href="#配置centos服务器" class="headerlink" title="配置centos服务器"></a>配置centos服务器</h1><h2 id="查看IP信息的两个命令"><a href="#查看IP信息的两个命令" class="headerlink" title="查看IP信息的两个命令"></a>查看IP信息的两个命令</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305232307370.png" alt="image-20210305232307370"></p>
+<p>介绍：<a href="https://www.jianshu.com/p/6fff29bd42b3" target="_blank" rel="noopener">https://www.jianshu.com/p/6fff29bd42b3</a></p>
+<p>CentOS Minimal版本默认未安装net-tools，仅安装了iproute2</p>
+<h3 id="安装net-tools："><a href="#安装net-tools：" class="headerlink" title="安装net-tools："></a>安装net-tools：</h3><p>sudo yum install net-tools</p>
+<h3 id="运行ifconfig"><a href="#运行ifconfig" class="headerlink" title="运行ifconfig"></a>运行ifconfig</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210306004546997.png" alt="image-20210306004546997"></p>
+<h3 id="运行ip-addr"><a href="#运行ip-addr" class="headerlink" title="运行ip addr"></a>运行ip addr</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210305235509700.png" alt="image-20210305235509700"></p>
+<p><code>lo</code>：全称<code>loopback</code>，是回环地址，一般被分配到<code>127.0.0.1</code>地址上，用于本机通信，经过内核处理后直接返回，不会在任何网络中出现</p>
+<p><code>enp0s3</code>：网卡名，如果有多块网卡，会有多个类似这种名称的网卡。</p>
+<ul>
+<li><code>link/ether</code>：MAC地址，一块网卡有一个MAC地址。</li>
+<li><code>inet</code>：IPV4地址，一块网卡可以绑定多个IPV4地址。</li>
+<li><code>inet6</code>：IPV6地址，一块网卡可以绑定多个IPV6地址。</li>
+</ul>
+<h2 id="VirtualBox设置虚拟机的网络连接方式"><a href="#VirtualBox设置虚拟机的网络连接方式" class="headerlink" title="VirtualBox设置虚拟机的网络连接方式"></a>VirtualBox设置虚拟机的网络连接方式</h2><p>将enp0s3 的IPV4地址改为内网IP</p>
+<h3 id="第一步：关机"><a href="#第一步：关机" class="headerlink" title="第一步：关机"></a>第一步：关机</h3><h3 id="第二步：设置虚拟机网络连接方式为桥接网卡"><a href="#第二步：设置虚拟机网络连接方式为桥接网卡" class="headerlink" title="第二步：设置虚拟机网络连接方式为桥接网卡"></a>第二步：设置虚拟机网络连接方式为桥接网卡</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210306003508878.png" alt="image-20210306003508878"></p>
+<p>VirtualBox四种网络连接方式说明：<a href="https://cnblogs.com/jpfss/p/8616613.html" target="_blank" rel="noopener">https://cnblogs.com/jpfss/p/8616613.html</a></p>
+<h3 id="第三步：开机，重新运行ip-addr命令，查看IPV4地址"><a href="#第三步：开机，重新运行ip-addr命令，查看IPV4地址" class="headerlink" title="第三步：开机，重新运行ip addr命令，查看IPV4地址"></a>第三步：开机，重新运行ip addr命令，查看IPV4地址</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210306004007741.png" alt="image-20210306004007741"></p>
+<h2 id="查看enp0s3-配置文件"><a href="#查看enp0s3-配置文件" class="headerlink" title="查看enp0s3 配置文件"></a>查看enp0s3 配置文件</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210306004215050.png" alt="image-20210306004215050"></p>
+
+        </div>
+        
+                    <div class="post-footer">
+                        <div>
+                            
+                                转载声明：
+                                    商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">宋畅</a>
+                                        
+                                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2021/03/14/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/01PMP%E8%AF%BE%E7%A8%8B1~3%E7%AB%A0/" class="pre-post btn btn-default" title='Linux系列文章01 - 初识终端'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">
+                Linux系列文章01 - 初识终端
+            </span>
+        </a>
+        
+            
+                <a href="/2021/02/10/Linux%20%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/17SSH%E5%8D%8F%E8%AE%AE%E3%80%81SSH%E6%9C%8D%E5%8A%A1%E3%80%81SSH%E5%B7%A5%E5%85%B7%E3%80%81%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="next-post btn btn-default" title='Linux系列文章17 - 安装和配置CentOS服务器'>
+                    <span class="hidden-lg">下一篇</span>
+                    <span class="hidden-xs">
+                        Linux系列文章17 - 安装和配置CentOS服务器
+                    </span>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                </a>
+                
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载-CentOS-Minimal版本-安装包"><span class="toc-text">下载 CentOS Minimal版本 安装包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#镜像地址："><span class="toc-text">镜像地址：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#找到CentOS-Minimal版本："><span class="toc-text">找到CentOS Minimal版本：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#VirtualBox新建虚拟机"><span class="toc-text">VirtualBox新建虚拟机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#命名、设置虚拟机位置"><span class="toc-text">命名、设置虚拟机位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置内存大小"><span class="toc-text">设置内存大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置硬盘并创建"><span class="toc-text">设置硬盘并创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建成功，设置盘片"><span class="toc-text">创建成功，设置盘片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动"><span class="toc-text">启动</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-CentOS-Minimal版本-系统"><span class="toc-text">安装 CentOS Minimal版本 系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#设置语言"><span class="toc-text">设置语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置分区"><span class="toc-text">设置分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置网络"><span class="toc-text">设置网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设置网络自动连接"><span class="toc-text">设置网络自动连接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始安装"><span class="toc-text">开始安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装过程中设置root密码"><span class="toc-text">安装过程中设置root密码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装完成-重启系统"><span class="toc-text">安装完成 重启系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用root用户登录系统"><span class="toc-text">使用root用户登录系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置centos服务器"><span class="toc-text">配置centos服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看IP信息的两个命令"><span class="toc-text">查看IP信息的两个命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装net-tools："><span class="toc-text">安装net-tools：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运行ifconfig"><span class="toc-text">运行ifconfig</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运行ip-addr"><span class="toc-text">运行ip addr</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VirtualBox设置虚拟机的网络连接方式"><span class="toc-text">VirtualBox设置虚拟机的网络连接方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步：关机"><span class="toc-text">第一步：关机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步：设置虚拟机网络连接方式为桥接网卡"><span class="toc-text">第二步：设置虚拟机网络连接方式为桥接网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三步：开机，重新运行ip-addr命令，查看IPV4地址"><span class="toc-text">第三步：开机，重新运行ip addr命令，查看IPV4地址</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看enp0s3-配置文件"><span class="toc-text">查看enp0s3 配置文件</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
