@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="宋畅的技术博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="PMP,概述" />
+
+
+<meta name="description" content="4.项目整合管理
+整合、集成
+
+
+该领域的发展趋势和新兴实践
+
+4.1 制定项目章程
+
+项目发起人
+项目章程是什么？• 项目章程在项目执行组织与需求组织之间建立起伙伴关系。 
+• 在执行外部项目..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    PMP课程第4章-项目整合管理 |
+    
+    宋畅的技术博客
+</title>
+
+<link rel="alternate" href="/atom.xml" title="宋畅的技术博客" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='宋畅'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        宋畅的技术博客</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后台</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/服务器/"><i class="fa "></i>
+                                服务器</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/其他/"><i class="fa "></i>
+                                其他</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="PMP课程第4章-项目整合管理">
+            
+                    PMP课程第4章-项目整合管理
+                        
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a> <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/PMP%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">PMP项目管理</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/PMP/" rel="tag">PMP</a> <a class="tag-link" href="/tags/%E6%A6%82%E8%BF%B0/" rel="tag">概述</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2021/03/20</span>
+    </span>
+    
+    
+</div>
+            
+                
+    </div>
+    
+        <div class="post-body post-content">
+            <h1 id="4-项目整合管理"><a href="#4-项目整合管理" class="headerlink" title="4.项目整合管理"></a>4.项目整合管理</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402145151566.png" alt="image-20210402145151566"></p>
+<h2 id="整合、集成"><a href="#整合、集成" class="headerlink" title="整合、集成"></a>整合、集成</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402145210976.png" alt="image-20210402145210976"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402145352778.png" alt="image-20210402145352778"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402145301208.png" alt="image-20210402145301208"></p>
+<h2 id="该领域的发展趋势和新兴实践"><a href="#该领域的发展趋势和新兴实践" class="headerlink" title="该领域的发展趋势和新兴实践"></a>该领域的发展趋势和新兴实践</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402145328616.png" alt="image-20210402145328616"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402151513387.png" alt="image-20210402151513387"></p>
+<h1 id="4-1-制定项目章程"><a href="#4-1-制定项目章程" class="headerlink" title="4.1 制定项目章程"></a>4.1 制定项目章程</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402151712139.png" alt="image-20210402151712139"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402151725359.png" alt="image-20210402151725359"></p>
+<h2 id="项目发起人"><a href="#项目发起人" class="headerlink" title="项目发起人"></a>项目发起人</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402152114627.png" alt="image-20210402152114627"></p>
+<h2 id="项目章程是什么？"><a href="#项目章程是什么？" class="headerlink" title="项目章程是什么？"></a>项目章程是什么？</h2><p>• 项目章程在项目执行组织与需求组织之间建立起伙伴关系。 </p>
+<p>• 在执行外部项目时：正式的合同来达成外部合作协议；项目章程来建立 组织内部的合作关系。 </p>
+<p>• 项目章程一旦被批准，就标志着项目的正式启动。 </p>
+<p>• 应尽早确认并任命项目经理，最好在制定项目章程时就任命，最晚在规 划开始之前任命。</p>
+<p><strong>• 项目章程可由发起人编制，或者由项目经理与发起人合作编制</strong></p>
+<p>• 不要把项目章程看作合同，因为其中未承诺报酬、金钱、或对价交换。</p>
+<h2 id="制定项目章程的流程"><a href="#制定项目章程的流程" class="headerlink" title="制定项目章程的流程"></a>制定项目章程的流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402152638826.png" alt="image-20210402152638826"></p>
+<h2 id="制定项目章程-输入"><a href="#制定项目章程-输入" class="headerlink" title="制定项目章程-输入"></a>制定项目章程-输入</h2><h3 id="商业文件"><a href="#商业文件" class="headerlink" title="商业文件"></a>商业文件</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153115786.png" alt="image-20210402153115786"></p>
+<h4 id="商业论证"><a href="#商业论证" class="headerlink" title="商业论证"></a>商业论证</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153128807.png" alt="image-20210402153128807"></p>
+<p>例：</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153144119.png" alt="image-20210402153144119"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153221987.png" alt="image-20210402153221987"></p>
+<h4 id="效益管理计划"><a href="#效益管理计划" class="headerlink" title="效益管理计划"></a>效益管理计划</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153731854.png" alt="image-20210402153731854"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153744252.png" alt="image-20210402153744252"></p>
+<h3 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153846952.png" alt="image-20210402153846952"></p>
+<h3 id="事业环境因素"><a href="#事业环境因素" class="headerlink" title="事业环境因素"></a>事业环境因素</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402153949242.png" alt="image-20210402153949242"></p>
+<h3 id="组织过程资产"><a href="#组织过程资产" class="headerlink" title="组织过程资产"></a>组织过程资产</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402154001963.png" alt="image-20210402154001963"></p>
+<h2 id="制定项目章程-工具"><a href="#制定项目章程-工具" class="headerlink" title="制定项目章程-工具"></a>制定项目章程-工具</h2><h3 id="专家判断"><a href="#专家判断" class="headerlink" title="专家判断"></a>专家判断</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402154115715.png" alt="image-20210402154115715"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402154207220.png" alt="image-20210402154207220"></p>
+<h3 id="数据收集"><a href="#数据收集" class="headerlink" title="数据收集"></a>数据收集</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402154315715.png" alt="image-20210402154315715"></p>
+<h3 id="人际关系与团队技能"><a href="#人际关系与团队技能" class="headerlink" title="人际关系与团队技能"></a>人际关系与团队技能</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402154357391.png" alt="image-20210402154357391"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402155523033.png" alt="image-20210402155523033"></p>
+<h3 id="会议"><a href="#会议" class="headerlink" title="会议"></a>会议</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402155723016.png" alt="image-20210402155723016"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402155539137.png" alt="image-20210402155539137"></p>
+<h4 id="项目成功标准举例"><a href="#项目成功标准举例" class="headerlink" title="项目成功标准举例"></a>项目成功标准举例</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402160943723.png" alt="image-20210402160943723"></p>
+<h2 id="制定项目章程-输出"><a href="#制定项目章程-输出" class="headerlink" title="制定项目章程-输出"></a>制定项目章程-输出</h2><h3 id="项目章程"><a href="#项目章程" class="headerlink" title="项目章程"></a>项目章程</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402161417157.png" alt="image-20210402161417157"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402161629247.png" alt="image-20210402161629247"></p>
+<h4 id="项目章程的内容"><a href="#项目章程的内容" class="headerlink" title="项目章程的内容"></a>项目章程的内容</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402161055117.png" alt="image-20210402161055117"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402161310879.png" alt="image-20210402161310879"></p>
+<h3 id="假设日志"><a href="#假设日志" class="headerlink" title="假设日志"></a>假设日志</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402161501327.png" alt="image-20210402161501327"></p>
+<h2 id="工具与技术综述（132种）"><a href="#工具与技术综述（132种）" class="headerlink" title="工具与技术综述（132种）"></a>工具与技术综述（132种）</h2><p><img src="02PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC4%E7%AB%A0/image-20210402161826102.png" alt="image-20210402161826102"></p>
+<h3 id="数据收集技术：9种"><a href="#数据收集技术：9种" class="headerlink" title="数据收集技术：9种"></a>数据收集技术：9种</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162106220.png" alt="image-20210402162106220"></p>
+<h3 id="数据分析技术：27种"><a href="#数据分析技术：27种" class="headerlink" title="数据分析技术：27种"></a>数据分析技术：27种</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162122519.png" alt="image-20210402162122519"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162135759.png" alt="image-20210402162135759"></p>
+<h3 id="数据表现技术：15种"><a href="#数据表现技术：15种" class="headerlink" title="数据表现技术：15种"></a>数据表现技术：15种</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162157727.png" alt="image-20210402162157727"></p>
+<h3 id="人际关系与团队技能：17种"><a href="#人际关系与团队技能：17种" class="headerlink" title="人际关系与团队技能：17种"></a>人际关系与团队技能：17种</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162225969.png" alt="image-20210402162225969"></p>
+<h3 id="决策技术（2种）、沟通技巧（2种）："><a href="#决策技术（2种）、沟通技巧（2种）：" class="headerlink" title="决策技术（2种）、沟通技巧（2种）："></a>决策技术（2种）、沟通技巧（2种）：</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402162212235.png" alt="image-20210402162212235"></p>
+<h1 id="4-2制定项目管理计划"><a href="#4-2制定项目管理计划" class="headerlink" title="4.2制定项目管理计划"></a>4.2制定项目管理计划</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023315482.png" alt="image-20210406023315482"></p>
+<h2 id="制定项目管理计划流程"><a href="#制定项目管理计划流程" class="headerlink" title="制定项目管理计划流程"></a>制定项目管理计划流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023337473.png" alt="image-20210406023337473"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023741497.png" alt="image-20210406023741497"></p>
+<h2 id="制定项目管理计划输入"><a href="#制定项目管理计划输入" class="headerlink" title="制定项目管理计划输入"></a>制定项目管理计划输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023610309.png" alt="image-20210406023610309"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023639563.png" alt="image-20210406023639563"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023713556.png" alt="image-20210406023713556"></p>
+<h2 id="制定项目管理计划工具"><a href="#制定项目管理计划工具" class="headerlink" title="制定项目管理计划工具"></a>制定项目管理计划工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406023937839.png" alt="image-20210406023937839"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406024005040.png" alt="image-20210406024005040"></p>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406024016422.png" alt="image-20210406024016422"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406024323491.png" alt="image-20210406024323491"></p>
+<h2 id="项目管理计划的结构"><a href="#项目管理计划的结构" class="headerlink" title="项目管理计划的结构"></a>项目管理计划的结构</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025024081.png" alt="image-20210406025024081"></p>
+<h3 id="本过程生成的组件"><a href="#本过程生成的组件" class="headerlink" title="本过程生成的组件"></a>本过程生成的组件</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025302700.png" alt="image-20210406025302700"></p>
+<h4 id="变更管理计划"><a href="#变更管理计划" class="headerlink" title="变更管理计划"></a>变更管理计划</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025338367.png" alt="image-20210406025338367"></p>
+<h4 id="配置管理计划"><a href="#配置管理计划" class="headerlink" title="配置管理计划"></a>配置管理计划</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025403266.png" alt="image-20210406025403266"></p>
+<p>​            配置管理常用于软件开发管理</p>
+<h4 id="变更管理和配置管理的关系"><a href="#变更管理和配置管理的关系" class="headerlink" title="变更管理和配置管理的关系"></a>变更管理和配置管理的关系</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025606983.png" alt="image-20210406025606983"></p>
+<h3 id="项目管理计划-中的子管理计划"><a href="#项目管理计划-中的子管理计划" class="headerlink" title="项目管理计划 中的子管理计划"></a>项目管理计划 中的子管理计划</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025845848.png" alt="image-20210406025845848"></p>
+<h3 id="项目管理计划-中的基准"><a href="#项目管理计划-中的基准" class="headerlink" title="项目管理计划 中的基准"></a>项目管理计划 中的基准</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406025905655.png" alt="image-20210406025905655"></p>
+<h4 id="进度基准和进度管理计划举例"><a href="#进度基准和进度管理计划举例" class="headerlink" title="进度基准和进度管理计划举例"></a>进度基准和进度管理计划举例</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406030046305.png" alt="image-20210406030046305"></p>
+<p>​    <strong>基准写标准，管理计划写细节（增大项目经理权利）</strong></p>
+<h2 id="项目管理计划-全-与项目文件"><a href="#项目管理计划-全-与项目文件" class="headerlink" title="项目管理计划(全)与项目文件"></a>项目管理计划(全)与项目文件</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406030414728.png" alt="image-20210406030414728"></p>
+<h1 id="4-3指导与管理项目工作"><a href="#4-3指导与管理项目工作" class="headerlink" title="4.3指导与管理项目工作"></a>4.3指导与管理项目工作</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406030955202.png" alt="image-20210406030955202"></p>
+<h2 id="指导与管理项目工作-流程"><a href="#指导与管理项目工作-流程" class="headerlink" title="指导与管理项目工作 流程"></a>指导与管理项目工作 流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031407631.png" alt="image-20210406031407631"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031444144.png" alt="image-20210406031444144"></p>
+<h2 id="指导与管理项目工作-输入"><a href="#指导与管理项目工作-输入" class="headerlink" title="指导与管理项目工作 输入"></a>指导与管理项目工作 输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031628450.png" alt="image-20210406031628450"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031903753.png" alt="image-20210406031903753"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031710965.png" alt="image-20210406031710965"></p>
+<h2 id="指导与管理项目工作-工具"><a href="#指导与管理项目工作-工具" class="headerlink" title="指导与管理项目工作-工具"></a>指导与管理项目工作-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031746947.png" alt="image-20210406031746947"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031923596.png" alt="image-20210406031923596"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031803676.png" alt="image-20210406031803676"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031940933.png" alt="image-20210406031940933"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406031955263.png" alt="image-20210406031955263"></p>
+<h2 id="指导与管理项目工作-输出"><a href="#指导与管理项目工作-输出" class="headerlink" title="指导与管理项目工作-输出"></a>指导与管理项目工作-输出</h2><h3 id="1-可交付成果"><a href="#1-可交付成果" class="headerlink" title="1.可交付成果:"></a>1.可交付成果:</h3><p>产出的任何独特并可核实的产品、成果或服务能力。后续修改 需要走变更控制</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032311148.png" alt="image-20210406032311148"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032321683.png" alt="image-20210406032321683"></p>
+<h3 id="2-工作绩效数据"><a href="#2-工作绩效数据" class="headerlink" title="2.工作绩效数据"></a>2.工作绩效数据</h3><p>原始观察结果和测量值，在工作执行过程中收集</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032502988.png" alt="image-20210406032502988"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035746697.png" alt="image-20210406035746697"></p>
+<h3 id="3-问题日志"><a href="#3-问题日志" class="headerlink" title="3.问题日志"></a>3.问题日志</h3><p>帮助项目经理有效跟进和管理问题，确保它们得到调查和解决</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032622979.png" alt="image-20210406032622979"></p>
+<h3 id="4-变更请求"><a href="#4-变更请求" class="headerlink" title="4.变更请求"></a>4.变更请求</h3><p>是关于修改任何文件、可交付成果或基准的正式提议</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032723028.png" alt="image-20210406032723028"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406145304122.png" alt="image-20210406145304122"></p>
+<h3 id="5-项目管理计划更新"><a href="#5-项目管理计划更新" class="headerlink" title="5.项目管理计划更新"></a>5.项目管理计划更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032832949.png" alt="image-20210406032832949"></p>
+<h3 id="6-项目文件更新"><a href="#6-项目文件更新" class="headerlink" title="6.项目文件更新"></a>6.项目文件更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032848378.png" alt="image-20210406032848378"></p>
+<h3 id="7-组织过程资产更新"><a href="#7-组织过程资产更新" class="headerlink" title="7.组织过程资产更新"></a>7.组织过程资产更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406032859958.png" alt="image-20210406032859958"></p>
+<h1 id="4-4管理项目知识"><a href="#4-4管理项目知识" class="headerlink" title="4.4管理项目知识"></a>4.4管理项目知识</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033252326.png" alt="image-20210406033252326"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033341964.png" alt="image-20210406033341964"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033554465.png" alt="image-20210406033554465"></p>
+<h2 id="管理项目知识流程"><a href="#管理项目知识流程" class="headerlink" title="管理项目知识流程"></a>管理项目知识流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033654766.png" alt="image-20210406033654766"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033735401.png" alt="image-20210406033735401"></p>
+<h2 id="管理项目知识-输入"><a href="#管理项目知识-输入" class="headerlink" title="管理项目知识-输入"></a>管理项目知识-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033834411.png" alt="image-20210406033834411"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033853578.png" alt="image-20210406033853578"></p>
+<h2 id="管理项目知识-工具"><a href="#管理项目知识-工具" class="headerlink" title="管理项目知识-工具"></a>管理项目知识-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033930316.png" alt="image-20210406033930316"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033920385.png" alt="image-20210406033920385"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034043980.png" alt="image-20210406034043980"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406033955762.png" alt="image-20210406033955762"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034011563.png" alt="image-20210406034011563"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034022864.png" alt="image-20210406034022864"></p>
+<h2 id="管理项目知识-输出"><a href="#管理项目知识-输出" class="headerlink" title="管理项目知识-输出"></a>管理项目知识-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034137323.png" alt="image-20210406034137323"></p>
+<h1 id="4-5-监控项目工作"><a href="#4-5-监控项目工作" class="headerlink" title="4.5 监控项目工作"></a>4.5 监控项目工作</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034821603.png" alt="image-20210406034821603"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034838843.png" alt="image-20210406034838843"></p>
+<h2 id="监控项目工作流程"><a href="#监控项目工作流程" class="headerlink" title="监控项目工作流程"></a>监控项目工作流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034932768.png" alt="image-20210406034932768"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406034956935.png" alt="image-20210406034956935"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035112332.png" alt="image-20210406035112332"></p>
+<h2 id="监控项目工作-输入"><a href="#监控项目工作-输入" class="headerlink" title="监控项目工作-输入"></a>监控项目工作-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035600642.png" alt="image-20210406035600642"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035618565.png" alt="image-20210406035618565"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035638637.png" alt="image-20210406035638637"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040808056.png" alt="image-20210406040808056"></p>
+<h2 id="监控项目工作-工具"><a href="#监控项目工作-工具" class="headerlink" title="监控项目工作-工具"></a>监控项目工作-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035839625.png" alt="image-20210406035839625"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035854611.png" alt="image-20210406035854611"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035909656.png" alt="image-20210406035909656"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406035926040.png" alt="image-20210406035926040"></p>
+<h2 id="监控项目工作-输出"><a href="#监控项目工作-输出" class="headerlink" title="监控项目工作-输出"></a>监控项目工作-输出</h2><h3 id="1-工作绩效报告"><a href="#1-工作绩效报告" class="headerlink" title="1.工作绩效报告"></a>1.工作绩效报告</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040358898.png" alt="image-20210406040358898"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040522434.png" alt="image-20210406040522434"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040723276.png" alt="image-20210406040723276"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040657413.png" alt="image-20210406040657413"></p>
+<h3 id="2-变更请求"><a href="#2-变更请求" class="headerlink" title="2.变更请求"></a>2.变更请求</h3><p><img src="02PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC4%E7%AB%A0/image-20210406040443998.png" alt="image-20210406040443998"></p>
+<h3 id="3-项目管理计划更新"><a href="#3-项目管理计划更新" class="headerlink" title="3.项目管理计划更新"></a>3.项目管理计划更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040631639.png" alt="image-20210406040631639"></p>
+<h3 id="4-项目文件更新"><a href="#4-项目文件更新" class="headerlink" title="4.项目文件更新"></a>4.项目文件更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406040639337.png" alt="image-20210406040639337"></p>
+<h1 id="4-6实施整体变更控制"><a href="#4-6实施整体变更控制" class="headerlink" title="4.6实施整体变更控制"></a>4.6实施整体变更控制</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406101533054.png" alt="image-20210406101533054"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406101646003.png" alt="image-20210406101646003"></p>
+<h2 id="变更分类"><a href="#变更分类" class="headerlink" title="变更分类"></a>变更分类</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406101805652.png" alt="image-20210406101805652"></p>
+<h2 id="变更控制流程"><a href="#变更控制流程" class="headerlink" title="变更控制流程"></a>变更控制流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102023580.png" alt="image-20210406102023580"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102043398.png" alt="image-20210406102043398"></p>
+<p>0~4 ：变更管理阶段</p>
+<p>5：配置管理阶段</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102104241.png" alt="image-20210406102104241"></p>
+<h2 id="实施整体变更控制-流程"><a href="#实施整体变更控制-流程" class="headerlink" title="实施整体变更控制-流程"></a>实施整体变更控制-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102212995.png" alt="image-20210406102212995"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102230401.png" alt="image-20210406102230401"></p>
+<h2 id="实施整体变更控制-输入"><a href="#实施整体变更控制-输入" class="headerlink" title="实施整体变更控制-输入"></a>实施整体变更控制-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102302218.png" alt="image-20210406102302218"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102312209.png" alt="image-20210406102312209"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102335483.png" alt="image-20210406102335483"></p>
+<p>简述</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102501069.png" alt="image-20210406102501069"></p>
+<h2 id="实施整体变更控制-工具"><a href="#实施整体变更控制-工具" class="headerlink" title="实施整体变更控制-工具"></a>实施整体变更控制-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102426850.png" alt="image-20210406102426850"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103348995.png" alt="image-20210406103348995"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103829501.png" alt="image-20210406103829501"></p>
+<h3 id="变更控制工具"><a href="#变更控制工具" class="headerlink" title="变更控制工具"></a>变更控制工具</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103911178.png" alt="image-20210406103911178"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102855473.png" alt="image-20210406102855473"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406102930751.png" alt="image-20210406102930751"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103949877.png" alt="image-20210406103949877"></p>
+<h3 id="软件项目中-纳入配置项的-工件举例："><a href="#软件项目中-纳入配置项的-工件举例：" class="headerlink" title="软件项目中 纳入配置项的 工件举例："></a>软件项目中 纳入配置项的 工件举例：</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103210556.png" alt="image-20210406103210556"></p>
+<h3 id="变更控制工具还应支持以下变更管理活动"><a href="#变更控制工具还应支持以下变更管理活动" class="headerlink" title="变更控制工具还应支持以下变更管理活动"></a>变更控制工具还应支持以下变更管理活动</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103244532.png" alt="image-20210406103244532"></p>
+<h2 id="实施整体变更控制-输出"><a href="#实施整体变更控制-输出" class="headerlink" title="实施整体变更控制-输出"></a>实施整体变更控制-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406103800899.png" alt="image-20210406103800899"></p>
+<h1 id="4-7-结束项目或阶段"><a href="#4-7-结束项目或阶段" class="headerlink" title="4.7 结束项目或阶段"></a>4.7 结束项目或阶段</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104043308.png" alt="image-20210406104043308"></p>
+<h2 id="收尾所需的必要活动"><a href="#收尾所需的必要活动" class="headerlink" title="收尾所需的必要活动"></a>收尾所需的必要活动</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104111024.png" alt="image-20210406104111024"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104216630.png" alt="image-20210406104216630"></p>
+<h3 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104253779.png" alt="image-20210406104253779"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104304292.png" alt="image-20210406104304292"></p>
+<h2 id="结束项目或阶段-流程"><a href="#结束项目或阶段-流程" class="headerlink" title="结束项目或阶段-流程"></a>结束项目或阶段-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104520016.png" alt="image-20210406104520016"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406104536708.png" alt="image-20210406104536708"></p>
+<h2 id="实施整体变更控制-输入-1"><a href="#实施整体变更控制-输入-1" class="headerlink" title="实施整体变更控制-输入"></a>实施整体变更控制-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105015419.png" alt="image-20210406105015419"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105109084.png" alt="image-20210406105109084"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105208908.png" alt="image-20210406105208908"></p>
+<h2 id="实施整体变更控制-工具-1"><a href="#实施整体变更控制-工具-1" class="headerlink" title="实施整体变更控制-工具"></a>实施整体变更控制-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105623164.png" alt="image-20210406105623164"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105637065.png" alt="image-20210406105637065"></p>
+<h2 id="实施整体变更控制-输出-1"><a href="#实施整体变更控制-输出-1" class="headerlink" title="实施整体变更控制-输出"></a>实施整体变更控制-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406110528498.png" alt="image-20210406110528498"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105909722.png" alt="image-20210406105909722"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406105950059.png" alt="image-20210406105950059"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210406110205225.png" alt="image-20210406110205225"></p>
+<h1 id="裁剪"><a href="#裁剪" class="headerlink" title="裁剪"></a>裁剪</h1><p>• 项目管理没有一种固定的方式；</p>
+<p>• 但是就一个具体的项目来说，项目经理和项目团队必须确定具体的、统一的项目管理流程， 包括要使用到哪些过程、顺序如何、管理颗粒度如何。</p>
+<h2 id="怎么裁剪"><a href="#怎么裁剪" class="headerlink" title="怎么裁剪"></a>怎么裁剪</h2><p>根据组织文化、行业特征、项目特点、团队特点，对右边部分可能需要具体化和定制化。 </p>
+<p>• 项目生命周期的选择 </p>
+<p>• 开发生命周期的选择 </p>
+<p>• 管理过程的选和删 </p>
+<p>• 知识管理方式 </p>
+<p>• 变更控制方式 </p>
+<p>• 治理方式 </p>
+<p>• 经验教训管理方式 </p>
+<p>• 收益管理方式</p>
+<h2 id="敏捷环境下的考虑"><a href="#敏捷环境下的考虑" class="headerlink" title="敏捷环境下的考虑"></a>敏捷环境下的考虑</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210402151440893.png" alt="image-20210402151440893"></p>
+
+        </div>
+        
+                    <div class="post-footer">
+                        <div>
+                            
+                                转载声明：
+                                    商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">宋畅</a>
+                                        
+                                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+            
+                <a href="/2021/03/14/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/01PMP%E8%AF%BE%E7%A8%8B1~3%E7%AB%A0/" class="next-post btn btn-default" title='PMP课程1~3章'>
+                    <span class="hidden-lg">下一篇</span>
+                    <span class="hidden-xs">
+                        PMP课程1~3章
+                    </span>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                </a>
+                
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#4-项目整合管理"><span class="toc-text">4.项目整合管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#整合、集成"><span class="toc-text">整合、集成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#该领域的发展趋势和新兴实践"><span class="toc-text">该领域的发展趋势和新兴实践</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-1-制定项目章程"><span class="toc-text">4.1 制定项目章程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#项目发起人"><span class="toc-text">项目发起人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目章程是什么？"><span class="toc-text">项目章程是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目章程的流程"><span class="toc-text">制定项目章程的流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目章程-输入"><span class="toc-text">制定项目章程-输入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#商业文件"><span class="toc-text">商业文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#商业论证"><span class="toc-text">商业论证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#效益管理计划"><span class="toc-text">效益管理计划</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#协议"><span class="toc-text">协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事业环境因素"><span class="toc-text">事业环境因素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组织过程资产"><span class="toc-text">组织过程资产</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目章程-工具"><span class="toc-text">制定项目章程-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#专家判断"><span class="toc-text">专家判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据收集"><span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#人际关系与团队技能"><span class="toc-text">人际关系与团队技能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#会议"><span class="toc-text">会议</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#项目成功标准举例"><span class="toc-text">项目成功标准举例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目章程-输出"><span class="toc-text">制定项目章程-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#项目章程"><span class="toc-text">项目章程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#项目章程的内容"><span class="toc-text">项目章程的内容</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#假设日志"><span class="toc-text">假设日志</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具与技术综述（132种）"><span class="toc-text">工具与技术综述（132种）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据收集技术：9种"><span class="toc-text">数据收集技术：9种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据分析技术：27种"><span class="toc-text">数据分析技术：27种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据表现技术：15种"><span class="toc-text">数据表现技术：15种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#人际关系与团队技能：17种"><span class="toc-text">人际关系与团队技能：17种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#决策技术（2种）、沟通技巧（2种）："><span class="toc-text">决策技术（2种）、沟通技巧（2种）：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-2制定项目管理计划"><span class="toc-text">4.2制定项目管理计划</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目管理计划流程"><span class="toc-text">制定项目管理计划流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目管理计划输入"><span class="toc-text">制定项目管理计划输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定项目管理计划工具"><span class="toc-text">制定项目管理计划工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#举例"><span class="toc-text">举例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目管理计划的结构"><span class="toc-text">项目管理计划的结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#本过程生成的组件"><span class="toc-text">本过程生成的组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变更管理计划"><span class="toc-text">变更管理计划</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置管理计划"><span class="toc-text">配置管理计划</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#变更管理和配置管理的关系"><span class="toc-text">变更管理和配置管理的关系</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目管理计划-中的子管理计划"><span class="toc-text">项目管理计划 中的子管理计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目管理计划-中的基准"><span class="toc-text">项目管理计划 中的基准</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#进度基准和进度管理计划举例"><span class="toc-text">进度基准和进度管理计划举例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目管理计划-全-与项目文件"><span class="toc-text">项目管理计划(全)与项目文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-3指导与管理项目工作"><span class="toc-text">4.3指导与管理项目工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#指导与管理项目工作-流程"><span class="toc-text">指导与管理项目工作 流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指导与管理项目工作-输入"><span class="toc-text">指导与管理项目工作 输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指导与管理项目工作-工具"><span class="toc-text">指导与管理项目工作-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指导与管理项目工作-输出"><span class="toc-text">指导与管理项目工作-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-可交付成果"><span class="toc-text">1.可交付成果:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-工作绩效数据"><span class="toc-text">2.工作绩效数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-问题日志"><span class="toc-text">3.问题日志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-变更请求"><span class="toc-text">4.变更请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-项目管理计划更新"><span class="toc-text">5.项目管理计划更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-项目文件更新"><span class="toc-text">6.项目文件更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-组织过程资产更新"><span class="toc-text">7.组织过程资产更新</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-4管理项目知识"><span class="toc-text">4.4管理项目知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#管理项目知识流程"><span class="toc-text">管理项目知识流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理项目知识-输入"><span class="toc-text">管理项目知识-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理项目知识-工具"><span class="toc-text">管理项目知识-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理项目知识-输出"><span class="toc-text">管理项目知识-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-5-监控项目工作"><span class="toc-text">4.5 监控项目工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#监控项目工作流程"><span class="toc-text">监控项目工作流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#监控项目工作-输入"><span class="toc-text">监控项目工作-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#监控项目工作-工具"><span class="toc-text">监控项目工作-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#监控项目工作-输出"><span class="toc-text">监控项目工作-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-工作绩效报告"><span class="toc-text">1.工作绩效报告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-变更请求"><span class="toc-text">2.变更请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-项目管理计划更新"><span class="toc-text">3.项目管理计划更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-项目文件更新"><span class="toc-text">4.项目文件更新</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-6实施整体变更控制"><span class="toc-text">4.6实施整体变更控制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#变更分类"><span class="toc-text">变更分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变更控制流程"><span class="toc-text">变更控制流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-流程"><span class="toc-text">实施整体变更控制-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-输入"><span class="toc-text">实施整体变更控制-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-工具"><span class="toc-text">实施整体变更控制-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变更控制工具"><span class="toc-text">变更控制工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件项目中-纳入配置项的-工件举例："><span class="toc-text">软件项目中 纳入配置项的 工件举例：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变更控制工具还应支持以下变更管理活动"><span class="toc-text">变更控制工具还应支持以下变更管理活动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-输出"><span class="toc-text">实施整体变更控制-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-7-结束项目或阶段"><span class="toc-text">4.7 结束项目或阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#收尾所需的必要活动"><span class="toc-text">收尾所需的必要活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#详情"><span class="toc-text">详情</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结束项目或阶段-流程"><span class="toc-text">结束项目或阶段-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-输入-1"><span class="toc-text">实施整体变更控制-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-工具-1"><span class="toc-text">实施整体变更控制-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实施整体变更控制-输出-1"><span class="toc-text">实施整体变更控制-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#裁剪"><span class="toc-text">裁剪</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么裁剪"><span class="toc-text">怎么裁剪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#敏捷环境下的考虑"><span class="toc-text">敏捷环境下的考虑</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
