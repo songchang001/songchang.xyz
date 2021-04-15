@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="宋畅的技术博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="PMP,项目进度管理" />
+
+
+<meta name="description" content="第六章：项目进度管理
+
+
+
+举例：
+
+第一步：定义活动：列举所有工作
+第二步：估算活动持续顺序：估算每一步需要的时间
+
+第三步：排列活动顺序：绘制网络图
+第四步：制定进度计划：标注时间，寻找关键..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    PMP课程第6章-项目进度管理 |
+    
+    宋畅的技术博客
+</title>
+
+<link rel="alternate" href="/atom.xml" title="宋畅的技术博客" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='宋畅'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        宋畅的技术博客</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后台</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/服务器/"><i class="fa "></i>
+                                服务器</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/其他/"><i class="fa "></i>
+                                其他</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="PMP课程第6章-项目进度管理">
+            
+                    PMP课程第6章-项目进度管理
+                        
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a> <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/PMP%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">PMP项目管理</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/PMP/" rel="tag">PMP</a> <a class="tag-link" href="/tags/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6%E7%AE%A1%E7%90%86/" rel="tag">项目进度管理</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2021/03/28</span>
+    </span>
+    
+    
+</div>
+            
+                
+    </div>
+    
+        <div class="post-body post-content">
+            <h1 id="第六章：项目进度管理"><a href="#第六章：项目进度管理" class="headerlink" title="第六章：项目进度管理"></a>第六章：项目进度管理</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210408163408851.png" alt="image-20210408163408851"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210408163513116.png" alt="image-20210408163513116"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210408163644053.png" alt="image-20210408163644053"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409140021996.png" alt="image-20210409140021996"></p>
+<p>举例：</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409141700012.png" alt="image-20210409141700012"></p>
+<p>第一步：定义活动：列举所有工作</p>
+<p>第二步：估算活动持续顺序：估算每一步需要的时间</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409141711761.png" alt="image-20210409141711761"></p>
+<p>第三步：排列活动顺序：绘制网络图</p>
+<p>第四步：制定进度计划：标注时间，寻找关键路径</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409143317217.png" alt="image-20210409143317217"></p>
+<h1 id="6-1-规划进度管理"><a href="#6-1-规划进度管理" class="headerlink" title="6.1 规划进度管理"></a>6.1 规划进度管理</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409143200605.png" alt="image-20210409143200605"></p>
+<h2 id="规划进度管理-流程"><a href="#规划进度管理-流程" class="headerlink" title="规划进度管理-流程"></a>规划进度管理-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409143340545.png" alt="image-20210409143340545"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409143423895.png" alt="image-20210409143423895"></p>
+<h2 id="规划进度管理-输入"><a href="#规划进度管理-输入" class="headerlink" title="规划进度管理-输入"></a>规划进度管理-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409143601945.png" alt="image-20210409143601945"></p>
+<h2 id="规划进度管理-工具"><a href="#规划进度管理-工具" class="headerlink" title="规划进度管理-工具"></a>规划进度管理-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409144123281.png" alt="image-20210409144123281"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409144140696.png" alt="image-20210409144140696"></p>
+<h2 id="规划进度管理-输出"><a href="#规划进度管理-输出" class="headerlink" title="规划进度管理-输出"></a>规划进度管理-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409144553765.png" alt="image-20210409144553765"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409144737890.png" alt="image-20210409144737890"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409144750351.png" alt="image-20210409144750351"></p>
+<h1 id="6-2-定义活动-（拆分工作包，拆分成活动）"><a href="#6-2-定义活动-（拆分工作包，拆分成活动）" class="headerlink" title="6.2 定义活动 （拆分工作包，拆分成活动）"></a>6.2 定义活动 （拆分工作包，拆分成活动）</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409155957547.png" alt="image-20210409155957547"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160024228.png" alt="image-20210409160024228"></p>
+<h2 id="定义活动-流程"><a href="#定义活动-流程" class="headerlink" title="定义活动-流程"></a>定义活动-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160111963.png" alt="image-20210409160111963"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160215758.png" alt="image-20210409160215758"></p>
+<h2 id="定义活动-输入"><a href="#定义活动-输入" class="headerlink" title="定义活动-输入"></a>定义活动-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160357142.png" alt="image-20210409160357142"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160807137.png" alt="image-20210409160807137"></p>
+<h2 id="定义活动-工具"><a href="#定义活动-工具" class="headerlink" title="定义活动-工具"></a>定义活动-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160829879.png" alt="image-20210409160829879"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160456723.png" alt="image-20210409160456723"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409160631996.png" alt="image-20210409160631996"></p>
+<h2 id="定义活动-输出"><a href="#定义活动-输出" class="headerlink" title="定义活动-输出"></a>定义活动-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161057239.png" alt="image-20210409161057239"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161303879.png" alt="image-20210409161303879"></p>
+<p>活动 有开始时间和结束时间，</p>
+<p><strong>里程碑 一般只有一个时间(开始或结束)，持续时间为0</strong></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161448554.png" alt="image-20210409161448554"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161712739.png" alt="image-20210409161712739"></p>
+<h1 id="6-3-排列活动顺序（画网络图）"><a href="#6-3-排列活动顺序（画网络图）" class="headerlink" title="6.3 排列活动顺序（画网络图）"></a>6.3 排列活动顺序（画网络图）</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162139337.png" alt="image-20210409162139337"></p>
+<h2 id="排列活动顺序-流程"><a href="#排列活动顺序-流程" class="headerlink" title="排列活动顺序-流程"></a>排列活动顺序-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161934900.png" alt="image-20210409161934900"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409161951877.png" alt="image-20210409161951877"></p>
+<h2 id="排列活动顺序-输入"><a href="#排列活动顺序-输入" class="headerlink" title="排列活动顺序-输入"></a>排列活动顺序-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162351787.png" alt="image-20210409162351787"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162506570.png" alt="image-20210409162506570"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162417914.png" alt="image-20210409162417914"></p>
+<h2 id="排列活动顺序-工具"><a href="#排列活动顺序-工具" class="headerlink" title="排列活动顺序-工具"></a>排列活动顺序-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162544364.png" alt="image-20210409162544364"></p>
+<h3 id="1-紧前关系绘图法"><a href="#1-紧前关系绘图法" class="headerlink" title="1.紧前关系绘图法"></a>1.紧前关系绘图法</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162908021.png" alt="image-20210409162908021"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409162931154.png" alt="image-20210409162931154"></p>
+<p>FS：刷完墙才能挂画</p>
+<p>SS：聚餐 领导到了才能开餐</p>
+<p>FF：下班 领导撤了才能撤</p>
+<p>SF：三班倒交班，下一班开始上一班才能结束</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409170034803.png" alt="image-20210409170034803"></p>
+<h3 id="2-确定和整合依赖关系"><a href="#2-确定和整合依赖关系" class="headerlink" title="2.确定和整合依赖关系"></a>2.确定和整合依赖关系</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409170758665.png" alt="image-20210409170758665"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210409170842132.png" alt="image-20210409170842132"></p>
+<h3 id="3-提前量和滞后量"><a href="#3-提前量和滞后量" class="headerlink" title="3.提前量和滞后量"></a>3.提前量和滞后量</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411230456174.png" alt="image-20210411230456174"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411230546574.png" alt="image-20210411230546574"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411230645897.png" alt="image-20210411230645897"></p>
+<h3 id="4-项目管理信息系统"><a href="#4-项目管理信息系统" class="headerlink" title="4.项目管理信息系统"></a>4.项目管理信息系统</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411230713321.png" alt="image-20210411230713321"></p>
+<h2 id="排列活动顺序-输出"><a href="#排列活动顺序-输出" class="headerlink" title="排列活动顺序-输出"></a>排列活动顺序-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411231102454.png" alt="image-20210411231102454"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411231111504.png" alt="image-20210411231111504"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411231129018.png" alt="image-20210411231129018"></p>
+<h1 id="6-4-估算活动持续时间"><a href="#6-4-估算活动持续时间" class="headerlink" title="6.4 估算活动持续时间"></a>6.4 估算活动持续时间</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232441313.png" alt="image-20210411232441313"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232619327.png" alt="image-20210411232619327"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232631526.png" alt="image-20210411232631526"></p>
+<h2 id="估算活动持续时间-流程"><a href="#估算活动持续时间-流程" class="headerlink" title="估算活动持续时间-流程"></a>估算活动持续时间-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232656574.png" alt="image-20210411232656574"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232708198.png" alt="image-20210411232708198"></p>
+<h2 id="估算活动持续时间-输入"><a href="#估算活动持续时间-输入" class="headerlink" title="估算活动持续时间-输入"></a>估算活动持续时间-输入</h2><p><img src="04PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC6%E7%AB%A0/image-20210411232803451.png" alt="image-20210411232803451"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232826519.png" alt="image-20210411232826519"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411232835212.png" alt="image-20210411232835212"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233031530.png" alt="image-20210411233031530"></p>
+<h2 id="估算活动持续时间-工具"><a href="#估算活动持续时间-工具" class="headerlink" title="估算活动持续时间-工具"></a>估算活动持续时间-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233047696.png" alt="image-20210411233047696"></p>
+<h3 id="1-专家判断"><a href="#1-专家判断" class="headerlink" title="1.专家判断"></a>1.专家判断</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233105338.png" alt="image-20210411233105338"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgmarkdownImgimage-20210411233213174.png" alt="image-20210411233213174"></p>
+<h3 id="2-类比估算"><a href="#2-类比估算" class="headerlink" title="2.类比估算"></a>2.类比估算</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233131868.png" alt="image-20210411233131868"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233305281.png" alt="image-20210411233305281"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233249754.png" alt="image-20210411233249754"></p>
+<h3 id="3-参数估算"><a href="#3-参数估算" class="headerlink" title="3.参数估算"></a>3.参数估算</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233509603.png" alt="image-20210411233509603"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233552088.png" alt="image-20210411233552088"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411233532941.png" alt="image-20210411233532941"></p>
+<h3 id="4-三点估算"><a href="#4-三点估算" class="headerlink" title="4.三点估算"></a>4.三点估算</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234048872.png" alt="image-20210411234048872"></p>
+<p>别名：正态分布、贝塔分布、Pert、计划评审技术</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234642176.png" alt="image-20210411234642176"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234148276.png" alt="image-20210411234148276"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234207689.png" alt="image-20210411234207689"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234221739.png" alt="image-20210411234221739"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234720480.png" alt="image-20210411234720480"></p>
+<h3 id="5-自下而上估算"><a href="#5-自下而上估算" class="headerlink" title="5.自下而上估算"></a>5.自下而上估算</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234607134.png" alt="image-20210411234607134"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411234730876.png" alt="image-20210411234730876"></p>
+<h3 id="6-数据分析"><a href="#6-数据分析" class="headerlink" title="6.数据分析"></a>6.数据分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411235515862.png" alt="image-20210411235515862"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000103934.png" alt="image-20210412000103934"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000144686.png" alt="image-20210412000144686"></p>
+<h3 id="7-决策"><a href="#7-决策" class="headerlink" title="7.决策"></a>7.决策</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411235604378.png" alt="image-20210411235604378"></p>
+<h3 id="8-会议"><a href="#8-会议" class="headerlink" title="8.会议"></a>8.会议</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210411235649461.png" alt="image-20210411235649461"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000015033.png" alt="image-20210412000015033"></p>
+<h2 id="估算活动持续时间-输出"><a href="#估算活动持续时间-输出" class="headerlink" title="估算活动持续时间-输出"></a>估算活动持续时间-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000405225.png" alt="image-20210412000405225"></p>
+<h3 id="1-持续时间估算"><a href="#1-持续时间估算" class="headerlink" title="1.持续时间估算"></a>1.持续时间估算</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000259684.png" alt="image-20210412000259684"></p>
+<h3 id="2-估算依据"><a href="#2-估算依据" class="headerlink" title="2.估算依据"></a>2.估算依据</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000332668.png" alt="image-20210412000332668"></p>
+<h3 id="3-项目文件更新"><a href="#3-项目文件更新" class="headerlink" title="3.项目文件更新"></a>3.项目文件更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000352106.png" alt="image-20210412000352106"></p>
+<h1 id="6-5-制定进度计划"><a href="#6-5-制定进度计划" class="headerlink" title="6.5 制定进度计划"></a>6.5 制定进度计划</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000513064.png" alt="image-20210412000513064"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000538834.png" alt="image-20210412000538834"></p>
+<h2 id="制定进度计划-流程"><a href="#制定进度计划-流程" class="headerlink" title="制定进度计划-流程"></a>制定进度计划-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000612284.png" alt="image-20210412000612284"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000629735.png" alt="image-20210412000629735"></p>
+<h2 id="制定进度计划-输入"><a href="#制定进度计划-输入" class="headerlink" title="制定进度计划-输入"></a>制定进度计划-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000855983.png" alt="image-20210412000855983"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000909309.png" alt="image-20210412000909309"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412000918682.png" alt="image-20210412000918682"></p>
+<h2 id="制定进度计划-工具"><a href="#制定进度计划-工具" class="headerlink" title="制定进度计划-工具"></a>制定进度计划-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001113409.png" alt="image-20210412001113409"></p>
+<h3 id="1-进度网络分析"><a href="#1-进度网络分析" class="headerlink" title="1.进度网络分析"></a>1.进度网络分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001033766.png" alt="image-20210412001033766"></p>
+<h3 id="2-关键路径法（CPM）"><a href="#2-关键路径法（CPM）" class="headerlink" title="2.关键路径法（CPM）"></a>2.关键路径法（CPM）</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001252135.png" alt="image-20210412001252135"></p>
+<p>举例:正推、倒推 计算关键路径</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001958054.png" alt="image-20210412001958054"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001915666.png" alt="image-20210412001915666"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412001858316.png" alt="image-20210412001858316"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412224511626.png" alt="image-20210412224511626"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412002205717.png" alt="image-20210412002205717"></p>
+<h4 id="制定进度计划-总结"><a href="#制定进度计划-总结" class="headerlink" title="制定进度计划-总结"></a>制定进度计划-总结</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412002524416.png" alt="image-20210412002524416"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412002543284.png" alt="image-20210412002543284"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412002552764.png" alt="image-20210412002552764"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgmarkdownImgimage-20210412002659252.png" alt="image-20210412002659252"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003431062.png" alt="image-20210412003431062"></p>
+<h3 id="3-资源优化"><a href="#3-资源优化" class="headerlink" title="3.资源优化"></a>3.资源优化</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003508025.png" alt="image-20210412003508025"></p>
+<p>资源优化用于调整活动的开始和完成日期，以调整计划使用的资源，使其等于或少于可用的资源。包括：</p>
+<h4 id="资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长"><a href="#资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长" class="headerlink" title="资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长"></a>资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003213023.png" alt="image-20210412003213023"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003224949.png" alt="image-20210412003224949"></p>
+<h4 id="资源平滑：解决预定资源限制的问题，处理结果不延长工期"><a href="#资源平滑：解决预定资源限制的问题，处理结果不延长工期" class="headerlink" title="资源平滑：解决预定资源限制的问题，处理结果不延长工期"></a>资源平滑：解决预定资源限制的问题，处理结果不延长工期</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003308368.png" alt="image-20210412003308368"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412003325284.png" alt="image-20210412003325284"></p>
+<h3 id="4-数据分析"><a href="#4-数据分析" class="headerlink" title="4.数据分析"></a>4.数据分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412100801997.png" alt="image-20210412100801997"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412100949136.png" alt="image-20210412100949136"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412100934854.png" alt="image-20210412100934854"></p>
+<h3 id="5-提前量和滞后量"><a href="#5-提前量和滞后量" class="headerlink" title="5.提前量和滞后量"></a>5.提前量和滞后量</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412100909723.png" alt="image-20210412100909723"></p>
+<h3 id="6-进度压缩"><a href="#6-进度压缩" class="headerlink" title="6.进度压缩"></a>6.进度压缩</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412101153659.png" alt="image-20210412101153659"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412101351200.png" alt="image-20210412101351200"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412101406866.png" alt="image-20210412101406866"></p>
+<h3 id="7-项目管理信息系统"><a href="#7-项目管理信息系统" class="headerlink" title="7.项目管理信息系统"></a>7.项目管理信息系统</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412101505285.png" alt="image-20210412101505285"></p>
+<h3 id="8-敏捷发布规划"><a href="#8-敏捷发布规划" class="headerlink" title="8.敏捷发布规划"></a>8.敏捷发布规划</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412101936119.png" alt="image-20210412101936119"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102011872.png" alt="image-20210412102011872"></p>
+<h2 id="制定进度计划-输出"><a href="#制定进度计划-输出" class="headerlink" title="制定进度计划-输出"></a>制定进度计划-输出</h2><h3 id="1-进度基准"><a href="#1-进度基准" class="headerlink" title="1.进度基准"></a>1.进度基准</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102154057.png" alt="image-20210412102154057"></p>
+<h3 id="2-项目进度计划-时间表"><a href="#2-项目进度计划-时间表" class="headerlink" title="2.项目进度计划/时间表"></a>2.项目进度计划/时间表</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102501308.png" alt="image-20210412102501308"></p>
+<h4 id="横道图"><a href="#横道图" class="headerlink" title="横道图"></a>横道图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102510502.png" alt="image-20210412102510502"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102903927.png" alt="image-20210412102903927"></p>
+<h4 id="逻辑横道图"><a href="#逻辑横道图" class="headerlink" title="逻辑横道图"></a>逻辑横道图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103359611.png" alt="image-20210412103359611"></p>
+<h4 id="里程碑图"><a href="#里程碑图" class="headerlink" title="里程碑图"></a>里程碑图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412102959633.png" alt="image-20210412102959633"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103042068.png" alt="image-20210412103042068"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103307867.png" alt="image-20210412103307867"></p>
+<h4 id="项目进度网络图"><a href="#项目进度网络图" class="headerlink" title="项目进度网络图"></a>项目进度网络图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103324798.png" alt="image-20210412103324798"></p>
+<h4 id="时标进度逻辑图"><a href="#时标进度逻辑图" class="headerlink" title="时标进度逻辑图"></a>时标进度逻辑图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103442611.png" alt="image-20210412103442611"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103454142.png" alt="image-20210412103454142"></p>
+<h3 id="3-进度数据"><a href="#3-进度数据" class="headerlink" title="3.进度数据"></a>3.进度数据</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103645507.png" alt="image-20210412103645507"></p>
+<h3 id="4-项目日历"><a href="#4-项目日历" class="headerlink" title="4.项目日历"></a>4.项目日历</h3><p>• 项目的工作日和工作班次。 </p>
+<p>• 一个进度模型中，可能有多个项目日历（不同活动，其日历不同）。</p>
+<h3 id="5-变更请求"><a href="#5-变更请求" class="headerlink" title="5.变更请求"></a>5.变更请求</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103759194.png" alt="image-20210412103759194"></p>
+<h3 id="6-项目管理计划更新"><a href="#6-项目管理计划更新" class="headerlink" title="6.项目管理计划更新"></a>6.项目管理计划更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103824795.png" alt="image-20210412103824795"></p>
+<h3 id="7-项目文件更新"><a href="#7-项目文件更新" class="headerlink" title="7.项目文件更新"></a>7.项目文件更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412103833557.png" alt="image-20210412103833557"></p>
+<h1 id="6-6-控制进度"><a href="#6-6-控制进度" class="headerlink" title="6.6 控制进度"></a>6.6 控制进度</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104354661.png" alt="image-20210412104354661"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104504666.png" alt="image-20210412104504666"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104516727.png" alt="image-20210412104516727"></p>
+<h2 id="控制进度-流程"><a href="#控制进度-流程" class="headerlink" title="控制进度-流程"></a>控制进度-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104549107.png" alt="image-20210412104549107"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104602796.png" alt="image-20210412104602796"></p>
+<h2 id="控制进度-输入"><a href="#控制进度-输入" class="headerlink" title="控制进度-输入"></a>控制进度-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104753643.png" alt="image-20210412104753643"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104823361.png" alt="image-20210412104823361"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104807703.png" alt="image-20210412104807703"></p>
+<h2 id="控制进度-工具"><a href="#控制进度-工具" class="headerlink" title="控制进度-工具"></a>控制进度-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412104941420.png" alt="image-20210412104941420"></p>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105226491.png" alt="image-20210412105226491"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105236501.png" alt="image-20210412105236501"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105353470.png" alt="image-20210412105353470"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105441473.png" alt="image-20210412105441473"></p>
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105513965.png" alt="image-20210412105513965"></p>
+<h2 id="控制进度-输出"><a href="#控制进度-输出" class="headerlink" title="控制进度-输出"></a>控制进度-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105710785.png" alt="image-20210412105710785"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105746102.png" alt="image-20210412105746102"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105754003.png" alt="image-20210412105754003"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210412105810643.png" alt="image-20210412105810643"></p>
+
+        </div>
+        
+                    <div class="post-footer">
+                        <div>
+                            
+                                转载声明：
+                                    商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">宋畅</a>
+                                        
+                                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2021/04/05/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/05PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC7%E7%AB%A0/" class="pre-post btn btn-default" title='PMP课程第7章-项目成本管理'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">
+                PMP课程第7章-项目成本管理
+            </span>
+        </a>
+        
+            
+                <a href="/2021/03/23/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/03PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC5%E7%AB%A0/" class="next-post btn btn-default" title='PMP课程第5章-项目范围管理'>
+                    <span class="hidden-lg">下一篇</span>
+                    <span class="hidden-xs">
+                        PMP课程第5章-项目范围管理
+                    </span>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                </a>
+                
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章：项目进度管理"><span class="toc-text">第六章：项目进度管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-1-规划进度管理"><span class="toc-text">6.1 规划进度管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#规划进度管理-流程"><span class="toc-text">规划进度管理-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划进度管理-输入"><span class="toc-text">规划进度管理-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划进度管理-工具"><span class="toc-text">规划进度管理-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划进度管理-输出"><span class="toc-text">规划进度管理-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-2-定义活动-（拆分工作包，拆分成活动）"><span class="toc-text">6.2 定义活动 （拆分工作包，拆分成活动）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义活动-流程"><span class="toc-text">定义活动-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义活动-输入"><span class="toc-text">定义活动-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义活动-工具"><span class="toc-text">定义活动-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义活动-输出"><span class="toc-text">定义活动-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-3-排列活动顺序（画网络图）"><span class="toc-text">6.3 排列活动顺序（画网络图）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#排列活动顺序-流程"><span class="toc-text">排列活动顺序-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排列活动顺序-输入"><span class="toc-text">排列活动顺序-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排列活动顺序-工具"><span class="toc-text">排列活动顺序-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-紧前关系绘图法"><span class="toc-text">1.紧前关系绘图法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-确定和整合依赖关系"><span class="toc-text">2.确定和整合依赖关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-提前量和滞后量"><span class="toc-text">3.提前量和滞后量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-项目管理信息系统"><span class="toc-text">4.项目管理信息系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排列活动顺序-输出"><span class="toc-text">排列活动顺序-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-4-估算活动持续时间"><span class="toc-text">6.4 估算活动持续时间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#估算活动持续时间-流程"><span class="toc-text">估算活动持续时间-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#估算活动持续时间-输入"><span class="toc-text">估算活动持续时间-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#估算活动持续时间-工具"><span class="toc-text">估算活动持续时间-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-专家判断"><span class="toc-text">1.专家判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-类比估算"><span class="toc-text">2.类比估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-参数估算"><span class="toc-text">3.参数估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-三点估算"><span class="toc-text">4.三点估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-自下而上估算"><span class="toc-text">5.自下而上估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-数据分析"><span class="toc-text">6.数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-决策"><span class="toc-text">7.决策</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-会议"><span class="toc-text">8.会议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#估算活动持续时间-输出"><span class="toc-text">估算活动持续时间-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-持续时间估算"><span class="toc-text">1.持续时间估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-估算依据"><span class="toc-text">2.估算依据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-项目文件更新"><span class="toc-text">3.项目文件更新</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-5-制定进度计划"><span class="toc-text">6.5 制定进度计划</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#制定进度计划-流程"><span class="toc-text">制定进度计划-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定进度计划-输入"><span class="toc-text">制定进度计划-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定进度计划-工具"><span class="toc-text">制定进度计划-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-进度网络分析"><span class="toc-text">1.进度网络分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-关键路径法（CPM）"><span class="toc-text">2.关键路径法（CPM）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#制定进度计划-总结"><span class="toc-text">制定进度计划-总结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-资源优化"><span class="toc-text">3.资源优化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长"><span class="toc-text">资源平衡：解决资源供需不匹配问题，处理结果可能导致工期延长</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#资源平滑：解决预定资源限制的问题，处理结果不延长工期"><span class="toc-text">资源平滑：解决预定资源限制的问题，处理结果不延长工期</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-数据分析"><span class="toc-text">4.数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-提前量和滞后量"><span class="toc-text">5.提前量和滞后量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-进度压缩"><span class="toc-text">6.进度压缩</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-项目管理信息系统"><span class="toc-text">7.项目管理信息系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-敏捷发布规划"><span class="toc-text">8.敏捷发布规划</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#制定进度计划-输出"><span class="toc-text">制定进度计划-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-进度基准"><span class="toc-text">1.进度基准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-项目进度计划-时间表"><span class="toc-text">2.项目进度计划&#x2F;时间表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#横道图"><span class="toc-text">横道图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#逻辑横道图"><span class="toc-text">逻辑横道图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#里程碑图"><span class="toc-text">里程碑图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目进度网络图"><span class="toc-text">项目进度网络图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#时标进度逻辑图"><span class="toc-text">时标进度逻辑图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-进度数据"><span class="toc-text">3.进度数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-项目日历"><span class="toc-text">4.项目日历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-变更请求"><span class="toc-text">5.变更请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-项目管理计划更新"><span class="toc-text">6.项目管理计划更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-项目文件更新"><span class="toc-text">7.项目文件更新</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-6-控制进度"><span class="toc-text">6.6 控制进度</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#控制进度-流程"><span class="toc-text">控制进度-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制进度-输入"><span class="toc-text">控制进度-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制进度-工具"><span class="toc-text">控制进度-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据分析"><span class="toc-text">数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他工具"><span class="toc-text">其他工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制进度-输出"><span class="toc-text">控制进度-输出</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
