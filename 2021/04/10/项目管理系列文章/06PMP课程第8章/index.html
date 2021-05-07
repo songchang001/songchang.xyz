@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="宋畅的技术博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="PMP,项目质量管理" />
+
+
+<meta name="description" content="第八章：项目质量管理
+核心理念
+
+
+
+
+
+
+趋势和实践
+敏捷环境下的考虑
+项目质量管理的3个过程
+8.1 规划质量管理
+规划质量管理-流程
+
+规划质量管理-输入
+
+
+
+
+规划质量管理-工具
+
+
+..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    PMP课程第8章-项目质量管理 |
+    
+    宋畅的技术博客
+</title>
+
+<link rel="alternate" href="/atom.xml" title="宋畅的技术博客" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='宋畅'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        宋畅的技术博客</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后台</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/服务器/"><i class="fa "></i>
+                                服务器</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/数据库/"><i class="fa "></i>
+                                数据库</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/其他/"><i class="fa "></i>
+                                其他</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="PMP课程第8章-项目质量管理">
+            
+                    PMP课程第8章-项目质量管理
+                        
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a> <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96/PMP%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">PMP项目管理</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/PMP/" rel="tag">PMP</a> <a class="tag-link" href="/tags/%E9%A1%B9%E7%9B%AE%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/" rel="tag">项目质量管理</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2021/04/10</span>
+    </span>
+    
+    
+</div>
+            
+                
+    </div>
+    
+        <div class="post-body post-content">
+            <h1 id="第八章：项目质量管理"><a href="#第八章：项目质量管理" class="headerlink" title="第八章：项目质量管理"></a>第八章：项目质量管理</h1><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419151506207.png" alt="image-20210419151506207"></h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419152550174.png" alt="image-20210419152550174"></p>
+<h2 id="核心理念"><a href="#核心理念" class="headerlink" title="核心理念"></a>核心理念</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419151525338.png" alt="image-20210419151525338"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419152630401.png" alt="image-20210419152630401"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155312598.png" alt="image-20210419155312598"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155441932.png" alt="image-20210419155441932"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155455210.png" alt="image-20210419155455210"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155504974.png" alt="image-20210419155504974"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155542170.png" alt="image-20210419155542170"></p>
+<h2 id="趋势和实践"><a href="#趋势和实践" class="headerlink" title="趋势和实践"></a>趋势和实践</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210419155558230.png" alt="image-20210419155558230"></p>
+<h2 id="敏捷环境下的考虑"><a href="#敏捷环境下的考虑" class="headerlink" title="敏捷环境下的考虑"></a>敏捷环境下的考虑</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426195045301.png" alt="image-20210426195045301"></p>
+<h2 id="项目质量管理的3个过程"><a href="#项目质量管理的3个过程" class="headerlink" title="项目质量管理的3个过程"></a>项目质量管理的3个过程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426195141056.png" alt="image-20210426195141056"></p>
+<h1 id="8-1-规划质量管理"><a href="#8-1-规划质量管理" class="headerlink" title="8.1 规划质量管理"></a>8.1 规划质量管理</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426195414867.png" alt="image-20210426195414867"></p>
+<h2 id="规划质量管理-流程"><a href="#规划质量管理-流程" class="headerlink" title="规划质量管理-流程"></a>规划质量管理-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426195501437.png" alt="image-20210426195501437"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426195537878.png" alt="image-20210426195537878"></p>
+<h2 id="规划质量管理-输入"><a href="#规划质量管理-输入" class="headerlink" title="规划质量管理-输入"></a>规划质量管理-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426203519933.png" alt="image-20210426203519933"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426203630055.png" alt="image-20210426203630055"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426203653778.png" alt="image-20210426203653778"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426203819989.png" alt="image-20210426203819989"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426203837736.png" alt="image-20210426203837736"></p>
+<h2 id="规划质量管理-工具"><a href="#规划质量管理-工具" class="headerlink" title="规划质量管理-工具"></a>规划质量管理-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426204944920.png" alt="image-20210426204944920"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426205001372.png" alt="image-20210426205001372"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426205322550.png" alt="image-20210426205322550"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426205720680.png" alt="image-20210426205720680"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426205924867.png" alt="image-20210426205924867"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426210024710.png" alt="image-20210426210024710"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210426210041612.png" alt="image-20210426210041612"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001604663.png" alt="image-20210427001604663"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001745079.png" alt="image-20210427001745079"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001807807.png" alt="image-20210427001807807"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001838177.png" alt="image-20210427001838177"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001854588.png" alt="image-20210427001854588"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001914779.png" alt="image-20210427001914779"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427001937791.png" alt="image-20210427001937791"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427002037071.png" alt="image-20210427002037071"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427002757035.png" alt="image-20210427002757035"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427002814671.png" alt="image-20210427002814671"></p>
+<h2 id="规划质量管理-输出"><a href="#规划质量管理-输出" class="headerlink" title="规划质量管理-输出"></a>规划质量管理-输出</h2><h3 id="质量管理计划"><a href="#质量管理计划" class="headerlink" title="质量管理计划"></a>质量管理计划</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003033218.png" alt="image-20210427003033218"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210429002856549.png" alt="image-20210429002856549"></p>
+<p>例：标准：</p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003314260.png" alt="image-20210427003314260"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003325119.png" alt="image-20210427003325119"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003335513.png" alt="image-20210427003335513"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003350461.png" alt="image-20210427003350461"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003413925.png" alt="image-20210427003413925"></p>
+<h3 id="质量测量指标"><a href="#质量测量指标" class="headerlink" title="质量测量指标"></a>质量测量指标</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003614928.png" alt="image-20210427003614928"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210429002829836.png" alt="image-20210429002829836"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003637063.png" alt="image-20210427003637063"></p>
+<h3 id="项目管理计划更新-和-项目文件更新"><a href="#项目管理计划更新-和-项目文件更新" class="headerlink" title="项目管理计划更新 和 项目文件更新"></a>项目管理计划更新 和 项目文件更新</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003703039.png" alt="image-20210427003703039"></p>
+<h1 id="8-2-管理质量（QA）"><a href="#8-2-管理质量（QA）" class="headerlink" title="8.2 管理质量（QA）"></a>8.2 管理质量（QA）</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427003839228.png" alt="image-20210427003839228"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004127298.png" alt="image-20210427004127298"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004143669.png" alt="image-20210427004143669"></p>
+<h2 id="管理质量-流程"><a href="#管理质量-流程" class="headerlink" title="管理质量-流程"></a>管理质量-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004255559.png" alt="image-20210427004255559"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004315828.png" alt="image-20210427004315828"></p>
+<h2 id="管理质量-输入"><a href="#管理质量-输入" class="headerlink" title="管理质量-输入"></a>管理质量-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004559477.png" alt="image-20210427004559477"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004512818.png" alt="image-20210427004512818"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004526147.png" alt="image-20210427004526147"></p>
+<h2 id="管理质量-工具"><a href="#管理质量-工具" class="headerlink" title="管理质量-工具"></a>管理质量-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427004623143.png" alt="image-20210427004623143"></p>
+<h3 id="数据收集"><a href="#数据收集" class="headerlink" title="数据收集"></a>数据收集</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005011594.png" alt="image-20210427005011594"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005030867.png" alt="image-20210427005030867"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005041790.png" alt="image-20210427005041790"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005257937.png" alt="image-20210427005257937"></p>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005116854.png" alt="image-20210427005116854"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005245697.png" alt="image-20210427005245697"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005355941.png" alt="image-20210427005355941"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005409273.png" alt="image-20210427005409273"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005420961.png" alt="image-20210427005420961"></p>
+<h3 id="决策"><a href="#决策" class="headerlink" title="决策"></a>决策</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005532661.png" alt="image-20210427005532661"></p>
+<h3 id="数据表现"><a href="#数据表现" class="headerlink" title="数据表现"></a>数据表现</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005646433.png" alt="image-20210427005646433"></p>
+<h4 id="因果图"><a href="#因果图" class="headerlink" title="因果图"></a>因果图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427005722048.png" alt="image-20210427005722048"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427010036845.png" alt="image-20210427010036845"></p>
+<h4 id="直方图-柱状图"><a href="#直方图-柱状图" class="headerlink" title="直方图(柱状图)"></a>直方图(柱状图)</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427010614430.png" alt="image-20210427010614430"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427010643541.png" alt="image-20210427010643541"></p>
+<h4 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427010734874.png" alt="image-20210427010734874"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210427010748572.png" alt="image-20210427010748572"></p>
+<h3 id="审计"><a href="#审计" class="headerlink" title="审计"></a>审计</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428095945796.png" alt="image-20210428095945796"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210429003646632.png" alt="image-20210429003646632"></p>
+<h3 id="面对X的设计"><a href="#面对X的设计" class="headerlink" title="面对X的设计"></a>面对X的设计</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100334804.png" alt="image-20210428100334804"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103606085.png" alt="image-20210428103606085"></p>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100456618.png" alt="image-20210428100456618"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100757369.png" alt="image-20210428100757369"></p>
+<h4 id="举例："><a href="#举例：" class="headerlink" title="举例："></a>举例：</h4><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100539979.png" alt="image-20210428100539979"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100553846.png" alt="image-20210428100553846"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100633653.png" alt="image-20210428100633653"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428100731964.png" alt="image-20210428100731964"></p>
+<h3 id="质量改进方法"><a href="#质量改进方法" class="headerlink" title="质量改进方法"></a>质量改进方法</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428102949741.png" alt="image-20210428102949741"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103550806.png" alt="image-20210428103550806"></p>
+<h2 id="管理质量-输出"><a href="#管理质量-输出" class="headerlink" title="管理质量-输出"></a>管理质量-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103631715.png" alt="image-20210428103631715"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103130487.png" alt="image-20210428103130487"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103448958.png" alt="image-20210428103448958"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103459375.png" alt="image-20210428103459375"></p>
+<h1 id="8-3-控制质量（QC）"><a href="#8-3-控制质量（QC）" class="headerlink" title="8.3 控制质量（QC）"></a>8.3 控制质量（QC）</h1><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103923399.png" alt="image-20210428103923399"></p>
+<h2 id="控制质量-流程"><a href="#控制质量-流程" class="headerlink" title="控制质量-流程"></a>控制质量-流程</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428103953877.png" alt="image-20210428103953877"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428104007815.png" alt="image-20210428104007815"></p>
+<h2 id="控制质量-输入"><a href="#控制质量-输入" class="headerlink" title="控制质量-输入"></a>控制质量-输入</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428104204240.png" alt="image-20210428104204240"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428104226167.png" alt="image-20210428104226167"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428104238509.png" alt="image-20210428104238509"></p>
+<h2 id="控制质量-工具"><a href="#控制质量-工具" class="headerlink" title="控制质量-工具"></a>控制质量-工具</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428104304902.png" alt="image-20210428104304902"></p>
+<h3 id="1-数据收集"><a href="#1-数据收集" class="headerlink" title="1.数据收集"></a>1.数据收集</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428105034350.png" alt="image-20210428105034350"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428105139241.png" alt="image-20210428105139241"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111913704.png" alt="image-20210428111913704"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428105520877.png" alt="image-20210428105520877"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111934598.png" alt="image-20210428111934598"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428105719833.png" alt="image-20210428105719833"></p>
+<h3 id="2-数据分析"><a href="#2-数据分析" class="headerlink" title="2.数据分析"></a>2.数据分析</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428105812329.png" alt="image-20210428105812329"></p>
+<h3 id="3-检查"><a href="#3-检查" class="headerlink" title="3.检查"></a>3.检查</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110209612.png" alt="image-20210428110209612"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111811281.png" alt="image-20210428111811281"></p>
+<h3 id="4-测试-产品评估"><a href="#4-测试-产品评估" class="headerlink" title="4.测试/产品评估"></a>4.测试/产品评估</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110333310.png" alt="image-20210428110333310"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111831356.png" alt="image-20210428111831356"></p>
+<h3 id="5-数据表现"><a href="#5-数据表现" class="headerlink" title="5.数据表现"></a>5.数据表现</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110744226.png" alt="image-20210428110744226"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110840927.png" alt="image-20210428110840927"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111958919.png" alt="image-20210428111958919"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110858639.png" alt="image-20210428110858639"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110931871.png" alt="image-20210428110931871"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428110944858.png" alt="image-20210428110944858"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428112014266.png" alt="image-20210428112014266"></p>
+<h3 id="6-会议"><a href="#6-会议" class="headerlink" title="6.会议"></a>6.会议</h3><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428112034663.png" alt="image-20210428112034663"></p>
+<h2 id="控制质量-输出"><a href="#控制质量-输出" class="headerlink" title="控制质量-输出"></a>控制质量-输出</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428112111753.png" alt="image-20210428112111753"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111502989.png" alt="image-20210428111502989"></p>
+<p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210428111514605.png" alt="image-20210428111514605"></p>
+<h2 id="可交付成果的演变"><a href="#可交付成果的演变" class="headerlink" title="可交付成果的演变"></a>可交付成果的演变</h2><p><img src="https://img-1253527041.cos.ap-shanghai.myqcloud.com/markdownImgimage-20210502213719571.png" alt="image-20210502213719571"></p>
+
+        </div>
+        
+                    <div class="post-footer">
+                        <div>
+                            
+                                转载声明：
+                                    商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">宋畅</a>
+                                        
+                                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2021/04/20/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/07PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC9%E7%AB%A0/" class="pre-post btn btn-default" title='PMP课程第9章-项目资源管理'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">
+                PMP课程第9章-项目资源管理
+            </span>
+        </a>
+        
+            
+                <a href="/2021/04/05/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/05PMP%E8%AF%BE%E7%A8%8B%E7%AC%AC7%E7%AB%A0/" class="next-post btn btn-default" title='PMP课程第7章-项目成本管理'>
+                    <span class="hidden-lg">下一篇</span>
+                    <span class="hidden-xs">
+                        PMP课程第7章-项目成本管理
+                    </span>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                </a>
+                
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第八章：项目质量管理"><span class="toc-text">第八章：项目质量管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心理念"><span class="toc-text">核心理念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#趋势和实践"><span class="toc-text">趋势和实践</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#敏捷环境下的考虑"><span class="toc-text">敏捷环境下的考虑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目质量管理的3个过程"><span class="toc-text">项目质量管理的3个过程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-1-规划质量管理"><span class="toc-text">8.1 规划质量管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#规划质量管理-流程"><span class="toc-text">规划质量管理-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划质量管理-输入"><span class="toc-text">规划质量管理-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划质量管理-工具"><span class="toc-text">规划质量管理-工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划质量管理-输出"><span class="toc-text">规划质量管理-输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#质量管理计划"><span class="toc-text">质量管理计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#质量测量指标"><span class="toc-text">质量测量指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目管理计划更新-和-项目文件更新"><span class="toc-text">项目管理计划更新 和 项目文件更新</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-2-管理质量（QA）"><span class="toc-text">8.2 管理质量（QA）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#管理质量-流程"><span class="toc-text">管理质量-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理质量-输入"><span class="toc-text">管理质量-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理质量-工具"><span class="toc-text">管理质量-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据收集"><span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据分析"><span class="toc-text">数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#决策"><span class="toc-text">决策</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据表现"><span class="toc-text">数据表现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#因果图"><span class="toc-text">因果图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#直方图-柱状图"><span class="toc-text">直方图(柱状图)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#散点图"><span class="toc-text">散点图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#审计"><span class="toc-text">审计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面对X的设计"><span class="toc-text">面对X的设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题解决"><span class="toc-text">问题解决</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#举例："><span class="toc-text">举例：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#质量改进方法"><span class="toc-text">质量改进方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理质量-输出"><span class="toc-text">管理质量-输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-3-控制质量（QC）"><span class="toc-text">8.3 控制质量（QC）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#控制质量-流程"><span class="toc-text">控制质量-流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制质量-输入"><span class="toc-text">控制质量-输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制质量-工具"><span class="toc-text">控制质量-工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-数据收集"><span class="toc-text">1.数据收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-数据分析"><span class="toc-text">2.数据分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-检查"><span class="toc-text">3.检查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-测试-产品评估"><span class="toc-text">4.测试&#x2F;产品评估</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-数据表现"><span class="toc-text">5.数据表现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-会议"><span class="toc-text">6.会议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制质量-输出"><span class="toc-text">控制质量-输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可交付成果的演变"><span class="toc-text">可交付成果的演变</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
